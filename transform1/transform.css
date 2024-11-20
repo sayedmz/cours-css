@@ -1,0 +1,73 @@
+/* translate==move (x,y)
+scale==zoom out x,y */
+.div1{
+    height: 40px;
+    width: 40px;
+    background: yellow;
+transform: translate(10px,10px);
+
+
+}
+.div2{
+    height: 40px;
+    width: 40px;
+    background: yellow;
+
+transform: scaleX(2.3);
+
+
+}
+/*transform: rotateY(50deg); نستطيغ استعمال X END Y  */
+.div3{
+    height: 40px;
+    width: 40px;
+    background: yellow;
+
+transform: rotateY(200deg);    
+
+}
+.div4{
+    height: 40px;
+    width: 40px;
+    background: yellow;
+
+transform: skew(10deg,30deg);    
+
+}
+/* matrix(scalex, skewy,skewx,scaley,translatex,translatey) */
+.div5{
+    height: 40px;
+    width: 40px;
+    background: yellow;
+
+transform: matrix(1, 0, 0, 1, 0, 0)  /*القم الافتؤاضية*/
+
+}
+/* نستطيع كتابة جميع هذه الاكواد مباشرة بدون كلمة transform */
+/* مثلا */
+.div6{
+    height: 40px;
+    width: 40px;
+    background: yellow;
+
+translate: 100px 20px;
+
+}
+.div7{
+    height: 40px;
+    width: 40px;
+    background: yellow;
+
+scale: -1 3;
+
+}
+.div8{
+    height: 40px;
+    width: 40px;
+    background: yellow;
+
+rotate:180deg;
+
+}
+
+

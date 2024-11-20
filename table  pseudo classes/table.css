@@ -1,0 +1,170 @@
+table{
+    width: 100%;
+    border-spacing: 2px;
+    border: 2px solid rgba(137, 43, 226, 0.603);
+
+}
+th{
+    background-color: blueviolet;
+    height: 40px;
+    border: 2px double rgba(68, 6, 127, 0.93);
+}
+td{
+    background-color: rgba(137, 43, 226, 0.273);
+    width: 30px;
+    text-align: center;/* يكون المحتوى بالوسط بالنسبة للعرض*/
+    vertical-align: middle;/*يكون المحتوى بالوسط بالنسبة للطول*/
+    border: 4px dotted rgba(78, 11, 141, 0.592);
+}
+/* pseudo classes */
+#pseudo{
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+}
+/* hover  عندما اقف عليه في الموس يتغير الاعدادات */
+#pseudo:hover{
+background-color: brown; 
+height: 200px;
+width: 200px;
+}
+/* تغيرر الاعدادات عند الضغط المطول */
+#pseudo:active{
+background-color: black;
+}
+
+#pseudo1{
+    height: 400px;
+    width: 400px;
+    background-color: rgb(121, 14, 174);
+    background-size: contain;
+}
+#pseudo1:hover{
+background-image: url(apple.jfif);
+}
+/* div:empty  تغيرر الاعدادات اذا كان الاب لا يحتوي عللى عناصر  */
+
+/* links */
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    
+   
+}
+a:hover{
+    color: brown;
+}
+/* visited  تغيير الاعدادات بعد زيارة الرابط */
+a:visited{
+    color: rgb(235, 213, 16);
+}
+/* link  تغيير الاعدادات لروابط التي لم نقم بزيارتها */
+a:link{
+    color: rgb(29, 164, 195);
+}
+a:active{
+background-color: black;
+}
+/* focus  عند الضغط على الحقل يتغير اعداداته */
+#input:focus{
+    background-color: chartreuse;
+    outline: none;
+}
+#input1:disabled{
+    background: rgb(49, 18, 207);
+
+}
+#input2:enabled{
+    background: rgb(12, 196, 8);
+
+}
+#input3:required{
+    background: rgb(220, 12, 175);
+
+}
+#input4:invalid{
+    background: rgb(246, 0, 0);
+
+}
+#input4:valid{
+    background: rgb(241, 245, 9);
+
+}
+#input5:checked{
+ position: absolute;
+ right: 0;
+
+}
+/* pseudo elements */
+
+/* first line  اعطاء ميزات لاول خط */
+.p1::first-line{
+    color: brown;
+    background-color: aqua;
+}
+/* selection شكل التحديد في الفقرة */
+/* اتطبق هذة الميزة على كل العناصر نستخدم ::selection  بهذا الشكل */
+.p1::selection{
+    background: yellow;
+    color: rgb(198, 14, 41);
+}
+/* لزيادة كلمة في بداية النص او نهايتة */
+.p2::before{
+    content: 't1';
+    color: rgb(247, 22, 22);
+    background: black;
+    font-size: 30px;
+}
+.p2::after{
+    content: 'z1';
+    color: rgb(247, 22, 22);
+    background: black;
+    font-size: 30px;
+}
+/* وضع علامة على العنصر  */
+.p3{
+    height: 50px;
+    background: rgb(138, 9, 9);
+    position: relative;
+}
+.p3::before{
+    content: "";
+    background: yellow;
+    height: 100%;
+    width: 10px;
+    position: absolute;
+
+}
+.p4{
+    height: 50px;
+    background: rgb(138, 9, 9);
+    position: relative;
+}
+.p4::before{
+    content: "";
+    background: yellow;
+    height: 10px;
+    width: 100%;
+    position: absolute;
+
+}
+.p5{
+    height: 50px;
+    background: rgb(138, 9, 9);
+    position: relative;
+}
+.p5::before{
+    content: "";
+    background: yellow;
+    height: 100%;
+    width: 10px;
+    position: absolute;
+right: 0;
+top: 0;
+}
+
+
+
+
+

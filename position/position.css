@@ -1,0 +1,100 @@
+.parent{
+    background-color: aquamarine;
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+
+}
+.parent div{
+    height: 50px;
+}
+/*position:static القيمة الافتراضية العادية لاتعمل مع الاتجاهات*/
+/*position:relative يحافظ على مكانة الاصلي ويتحرك نسبة لمكانة الاصلي*/
+
+.one{
+    background-color: blue;
+}
+.two{
+    background-color: blueviolet;
+    position: relative;
+    top: 70px;
+    left: 50px;
+}
+.three{
+    background-color: brown;
+}
+/*position:absolute  لا يحافظ عللى مكانة الاصلي ويتحرك نسبة للاب الخاص فيه اذا كان لدية بوزشن*/
+
+.parent1{
+    background-color: aquamarine;
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    position: relative;/*يجب ان نعطي الاب بوزشن  ليتحرك الابناء بالنسبة له*/
+
+}
+
+
+.one1{
+    background-color: blue;
+    height: 50px;
+}
+.two1{   height: 50px;
+    background-color: blueviolet;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+.three1{   height: 50px;
+    background-color: brown;
+}
+/*position: sticky*/
+.parent3{
+    background-color: aquamarine;
+    height: 500px;
+    width: 200px;
+    padding: 10px;
+
+}
+
+
+.one3{
+    background-color: blue;
+    height: 50px;
+}
+.two3{   height: 50px;
+    background-color: blueviolet;
+    position: sticky;/*يتحرك مع الشاشة ضمن نطاق الاب */
+    top: 0;
+
+
+
+}
+.three3{   height: 50px;
+    background-color: brown;
+}
+/* position: fixed*/
+.parent2{
+    background-color: aquamarine;
+    height: 2000px;
+    width: 200px;
+    padding: 10px;
+
+}
+
+
+.one2{
+    background-color: blue;
+    height: 50px;
+}
+.two2{   height: 50px;
+    background-color: blueviolet;
+    position: fixed;/*يتحرك ضمن نطاق الشاشة*/
+  top: 100px;
+  left: 100px;
+
+}
+.three2{   height: 50px;
+    background-color: brown;
+}

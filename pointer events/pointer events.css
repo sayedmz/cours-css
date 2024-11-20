@@ -1,0 +1,8 @@
+*{
+    box-sizing: border-box;
+    caret-color: red;   /*مؤشر الذي يظهر موقعك في النص*/
+    pointer-events: none;   /*لا يسمح بالضغط على العنصر المعني*/
+}
+.p1{
+    
+}

@@ -1,0 +1,215 @@
+#fit-content{color: blue;
+    background-color: aqua;
+    width: fit-content;
+}
+/*min-content ياتي العرض بعرض اطول كلمة*/
+#min-content{color: rgb(227, 227, 239);
+    background-color: rgb(15, 198, 58);
+    width: min-content;
+}
+/*max-content تاتي الكلمت كلها على خط واحد*/
+#max-content{color: rgb(51, 155, 186);
+    background-color: rgb(186, 15, 198);
+    width: max-content;
+}
+/*border raduis*/
+.border-raduis{
+    height: 200px;
+    width: 200px;
+    background-color: cadetblue;
+    border-radius: 100px;
+    text-align: center;
+
+}
+.border-raduis1{
+    height: 200px;
+    width: 200px;
+    background-color: cadetblue;
+    border-radius: 25px 80px;
+    text-align: center;
+
+}
+.border-raduis2{
+    height: 200px;
+    width: 200px;
+    background-color: cadetblue;
+    border-top-right-radius: 50px 250px;
+    text-align: center;
+
+}
+/*text shadow h-sha  v-sha blur   color    تستعمل للنصوص
+-  box shadow h-sh  v-sha   blur  spread  color inset  */
+#text-shadow1{
+    text-shadow:10px 15px 5px red,2px 5px 5px blue,-5px -15px 5px yellow;
+}
+#box-shadow{
+    height: 400px;
+    width: 400px;
+    background-color: chartreuse;
+    text-align: center;
+    box-shadow: 10px 10px 15px red ;
+}
+#box-shadow1{
+    height: 400px;
+    width: 400px;
+    background-color: rgb(10, 124, 200);
+    text-align: center;
+    box-shadow: 10px 10px 15px 5px yellow ;
+}
+#box-shadow2{
+    height: 400px;
+    width: 400px;
+    background-color: rgb(10, 124, 200);
+    text-align: center;
+    box-shadow: 30px -29px 15px 5px yellow inset,-30px 29px 15px 5px rgb(15, 181, 3) inset ;
+}
+/*white space-  wrapping*/
+#white-space{
+    background-color: antiquewhite;
+    width: 100px;
+    white-space: normal;/*لا تلتزم بالحدود اذا كانت الكلمة كبيرة*/
+}
+
+#word-wrap{
+    background-color: antiquewhite;
+    width: 100px;
+    word-wrap: break-word;/* تلتزم بالحدود اذا كانت الكلمة كبيرة*/
+}
+/*white-space-pre لا تلتزم بال راب. تظهر المسافات كما هي والسطور*/
+#white-space-pre{
+    background-color: aqua;
+    width: 200px;
+    white-space: pre;
+}
+/*white-space-pre-wrap  تلتزم بال راب. تظهر المسافات كما هي والسطور*/
+
+#white-space-pre-wrap{
+    background-color: aqua;
+    width: 200px;
+    white-space: pre-wrap;
+}
+/*white-space-pre-line لا تظهر المسافات داخل الخطوط فقط تلتزم بال راب */
+
+#white-space-pre-line{
+    background-color: aqua;
+    width: 200px;
+    white-space: pre-line;
+   
+}
+/*font-style 
+font-variant:small-caps تظهر الاحرف كبيرة بخط صغير 
+font-weight:bold 
+font size 
+font family 
+line-height:20px تباعد بين السطور
+اختصار اخر اثنتين اجباري علينا اعطاء قيمتهم
+font:font-style font-variant font-weight font-size/line-height  font-family 
+
+*/
+
+/*
+1-background-color
+2-background-image:url();
+3-background-repeat;
+3-background-repeat:repeat;
+4-background-repeat:no-repeat;
+5-background-repeat:repeat-x;
+6-background-repeat:repeat-y;
+7-background-attachment:fixed;
+8-background-position:10px 50 px;
+8-background-position:left top;
+8-background-position:center;
+9-background-size:100% ou 200px 100px ou cover ou contain 
+10-background-origin:padding-box ou content-box ou border-box تحديد من اين ستبدأ الصورة;
+اختصار
+background:color background-image background-repeat background-position/background-size background-origin */
+/*طرق تدرج الالوان*/
+.linear-gradient{
+    height: 200px;
+    background-image: linear-gradient(to left,red,green);
+}
+.linear-gradient1{
+    height: 200px;
+    background-image: linear-gradient(to top right,red,green,yellow,blue);
+}
+.linear-gradient2{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom left,red,green,yellow,blue,white);
+}
+.linear-gradient3{
+    height: 200px;
+    background-image: linear-gradient(90deg,red,green,yellow,blue,white);
+}
+.linear-gradient4{
+    height: 200px;
+    background-image: linear-gradient(to left,red 200px,green 20%,yellow,blue,white);
+}
+.linear-gradient5{
+    height: 200px;
+    background-image: linear-gradient(to bottom,red ,transparent);/*الانتهاء بدرجة شفافية*/
+}
+/* radial gradient */
+.radial-gradient{
+    width: 100px;
+    height: 100px;
+    background-image: radial-gradient(red,yellow,blue,green);
+}
+.radial-gradient1{
+    width: 100px;
+    height: 100px;
+    background-image: radial-gradient(circle 50px,red,yellow);
+}
+.radial-gradient2{
+    width: 100px;
+    height: 100px;
+    background-image: radial-gradient(ellipse 100px 50px,red,yellow);
+}
+.radial-gradient3{
+    width: 200px;
+    height: 100px;
+    background-image: radial-gradient(circle 50px at top left,red,yellow);
+}
+.radial-gradient4{
+    width: 200px;
+    height: 100px;
+    background-image: radial-gradient(circle 50px at  right,red,yellow);
+}
+/*list style */
+
+.ul1{
+    list-style-type: circle;
+    list-style-position: outside;
+}
+.ul2{
+    list-style-type: georgian;
+    list-style-position: inside;
+}
+li{
+    background-color: brown;
+}
+.ul3{
+    list-style-image:linear-gradient(red,blue) ;
+    list-style-position: inside;
+   
+  
+}
+.ul4{
+    list-style-image: linear-gradient(red,blue);
+    list-style-position: outside;
+}
+/*اختصار 
+list-style : list-style-type list-style-position list-style-image  */
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+body{
+  background-image:linear-gradient(to right,#01022d,#01022dc7);
+  height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.container{
+    background-image:linear-gradient(to right,#01022de8 30%,#0507687b), 
+    url(https://ca-times.brightspotcdn.com/dims4/default/c1a61d9/2147483647/strip/true/crop/3840x2160+0+0/resize/1200x675!/format/webp/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F03%2F0d%2F44d557194a8db3da6f4536cc2f30%2Favtr-226.jpg);
+    background-size: cover;
+width: 90%;
+height: 640px;
+background-position: center;
+}
+/* جعل الصورة تضيئ */
+.container:hover{
+    background-image: linear-gradient(to right,#01022de8 30%,transparent),
+    url(https://ca-times.brightspotcdn.com/dims4/default/c1a61d9/2147483647/strip/true/crop/3840x2160+0+0/resize/1200x675!/format/webp/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F03%2F0d%2F44d557194a8db3da6f4536cc2f30%2Favtr-226.jpg);
+    ;
+}
+nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px;
+   
+}
+
+
+.log{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+ul{
+    width: 60%;
+    list-style: none;
+    display: flex;
+    justify-content:space-evenly ;
+}
+ul a{
+    border: 2px solid transparent;
+
+}
+ul a:hover{
+    border-bottom-color: white;
+}
+.content{
+width: 40%;
+margin-top: 50px;
+padding: 30px;
+color: white;
+    
+}
+h2{
+    font-size: 90px;
+    font-variant: small-caps;
+}
+.content p{
+    letter-spacing: 1px;
+    width: 300px;
+    padding: 20px 0;
+}
+#button{
+  font-size: large;
+  font-style: italic;
+    display: flex;
+    width: 100px;
+    height: 30px;
+    padding: 6px 10px;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 5px;
+   align-items: center;
+    justify-content: center;
+}
+#button:hover{
+    border-color: white;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+
+}
+

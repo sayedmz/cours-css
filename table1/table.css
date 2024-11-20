@@ -1,0 +1,38 @@
+table{
+    width: 100%;
+    border-spacing: 2px;
+    border: 2px solid rgba(137, 43, 226, 0.603);
+    background-color: rgba(0, 0, 0, 0.306);
+
+}
+th{
+    background-color: blueviolet;
+    height: 40px;
+    border: 2px double rgba(68, 6, 127, 0.93);
+}
+td{
+    background-color: rgba(137, 43, 226, 0.273);
+    width: 30px;
+    text-align: center;/* يكون المحتوى بالوسط بالنسبة للعرض*/
+    vertical-align: middle;/*يكون المحتوى بالوسط بالنسبة للطول*/
+    border: 4px dotted rgba(78, 11, 141, 0.592);
+}
+p{padding: 20px;
+    width: 50%;
+    height: auto;
+   border: 5px solid red;
+background: rgba(146, 5, 5, 0.331);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    font-weight: bolder;
+    font-style: italic;
+    letter-spacing: 12px;
+    word-spacing: 13px;
+    text-transform: capitalize;/*uppercase lowercase */ 
+    text-align: justify;/*left center  right*/
+    text-decoration: underline;
+    text-shadow: 4px 8px 5px rgb(23, 23, 20);
+    text-indent: 30px; /*بداية اول سطر */
+   
+}
+/* font-variant:small-caps;نفسها text-transform ولكن صيغة اصغر  */

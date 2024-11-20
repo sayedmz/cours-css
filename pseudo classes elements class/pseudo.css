@@ -1,0 +1,41 @@
+.one{
+    position: relative;
+   text-align: center;
+   
+    width: 300px;
+margin-bottom: 30px;
+
+}
+.one::before{
+content: "";
+background-color: rgb(255, 254, 254);
+width: 0px;
+height: 0px;
+position: absolute;
+border-width: 10px;
+border-style: solid;
+border-color:transparent transparent transparent blueviolet;
+left: 0;
+}
+.one::after{
+    content: "";
+    position: absolute;
+    background-color: brown;
+    width: 4px;
+    right: -11px;
+    top: 1px;
+    height: 79px;
+}
+#photo{
+    margin-top: 30px;
+}
+#photo::before{
+    content: "";
+    position: absolute;
+    background-color: brown;
+    width: 4px;
+   
+    right: -11px;
+    top: 1px;
+    height: 79px;
+}

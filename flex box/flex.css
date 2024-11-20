@@ -1,0 +1,116 @@
+/* if flex-direction==row
+justify-content==X
+align-items==Y    تخلق مساحات بين العناصر flex-لا تحتاج الى تشغيل الراب بال
+align-content==Y  لا تخلق مساحات بين العناصر flex-flowتحتاج الى تشغيل الراب بال
+flex-direction==column
+justify-content==Y
+align-items==X  center right lfet فقط
+align-content==X  center right lfet space-between around evenly
+ */
+
+.parent{
+    height: 300px; 
+    background: red;
+    display: flex;  /*inline-flex مثل  fit-content*/
+    /*flex-direction: row;*/  /*column*/
+   /* flex-wrap: wrap;*/  /*wrap reverse*/
+     flex-flow: row wrap;
+     justify-content: center; /*flex-start تضع العناصر في البداية */
+                      /*flex-end  تضع العناصر في النهاية*/
+                      /*center */
+                    /* space-between تضع مسافات بين العناصر بالتساوي */
+                     /*  space-around تضع مسافات حول العناصر  */
+                    /*  space-evenly تضع مسافات حول العناصر بالتساوي */
+      align-content: center;  /*stretch القيمة الافتراضية ياخذ الابناء كامل العرض*/    
+           /* flex-end تاتي العناصر بالنهاية */
+           /* flex-start تاتي العناصر في البداية */
+}
+.parent div{
+    padding: 10px;
+    margin: 10px;
+}
+.item1{
+    background: blue;
+}
+.item2{
+    background: rgb(17, 185, 8);
+}
+.item3{
+    background: rgb(238, 255, 0);
+}
+.item4{
+    background: rgb(7, 175, 213);
+}
+
+/* parent1 */
+
+.parent1{
+    background: red;
+    display: flex;  /*inline-flex مثل  fit-content*/
+    height: 400px;
+     flex-flow: column wrap;
+     justify-content: center;
+     align-items: center;
+
+}
+.parent1 div{
+    padding: 10px;
+    margin: 10px;}
+
+.item11{
+    background: blue;
+}
+.item12{
+    background: rgb(17, 185, 8);
+}
+.item13{
+    background: rgb(238, 255, 0);
+}
+.item14{
+    background: rgb(7, 175, 213);
+}
+/* parent2 */
+
+.parent2{
+    background: red;
+    display: flex;  /*inline-flex مثل  fit-content*/
+    height: 400px;
+    padding: 10px;
+    width: 400px;
+    gap: 10px; /*للفراغات*/
+
+
+}
+
+
+
+.item21{
+
+    background: blue;
+    align-self: flex-end;  /* مكان العنصر*/
+    order: 4;  /* ترتيب العنصر*/
+    flex-grow: 1; /*تقسيم المساحة المتبقية*/
+    flex-shrink: 0;  /*لا يصغر حجم العرض والطول يبقى كما هو */
+    flex-basis: 250px;
+     /*اعطاء عرض  اذا flex direction row تتحكم بالعرض والطول وبالعكس*/
+
+     /* اختصار
+     flex:  flex-grow flex-shrink flex-basis*/
+}
+.item22{
+    background: rgb(17, 185, 8);
+    align-self: center;
+    order: 3;
+ 
+}
+.item23{
+    background: rgb(238, 255, 0);
+    align-self: flex-start;
+    order: 5;
+
+}
+.item24{
+    background: rgb(7, 175, 213);
+    flex-grow: 2;
+    align-self: center;
+}

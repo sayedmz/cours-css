@@ -1,0 +1,68 @@
+
+
+.ro{
+    font-size: 50px;
+    color: aqua;
+    background-color: blanchedalmond;
+    width: fit-content;
+ 
+    transform: rotate(360deg);
+    transition: 1s;
+}
+.ro:hover{
+    transform: rotate(0deg);
+    /*   transform: rotate(0deg rotate(5deg); لجعلها تتكبر وتدور عند ضغط عليها */
+}
+
+.rox{
+    font-size: 50px;
+    color: aqua;
+    background-color: rgb(42, 5, 111);
+    width: fit-content;
+ 
+    transform: rotate(360deg);
+    transition: 1s;
+}
+.rox:hover{
+    transform: rotatex(70deg);
+    
+}
+
+.roy{
+    font-size: 50px;
+    color: aqua;
+    background-color: rgb(9, 163, 86);
+    width: fit-content;
+ 
+    transform: rotate(360deg);
+    transition: 1s;
+}
+.roy:hover{
+    transform: rotatey(70deg);
+    
+}
+
+.roz{
+    font-size: 50px;
+    color: aqua;
+    background-color: rgb(196, 234, 9);
+    width: fit-content;
+ 
+    transform: rotatez(360deg);
+    transition: 1s;
+}
+.roz:hover{
+    transform: rotatez(70deg);
+    
+}
+.roxyz{
+    font-size: 50px;
+    color: aqua;
+    background-color: rgb(243, 49, 15);
+    width: fit-content;
+ 
+    transform: rotate3d(0, 1, 1, (65deg));
+    
+}
+
+

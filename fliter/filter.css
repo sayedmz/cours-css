@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+.photo{
+    transition: 0.3s;
+    filter: grayscale(100%);  /*جعل الصورة اسود وابيض */
+}
+.photo:hover{
+    filter: grayscale(0);  /*رد الالوان الى الصورة*/
+}
+
+
+#photo1{
+    filter: blur(4px);  /*جعل الصورة ضبابية*/
+}
+#photo2{
+    filter: invert(100%); /*جعل الصورة معكوسة*/
+}
+#photo3{
+    filter: opacity(0.3);  /*جعل الصورة شفافة*/
+}

@@ -1,0 +1,54 @@
+span{
+    background: red;
+}
+h1{background: blueviolet;
+    height: 200px;
+    width: 400px;
+    margin: 20px;
+}
+span{
+    margin: 40px;
+}
+#h1{
+    background: yellow;
+    display: inline;
+}
+#span1{
+    display: block;
+    width: 200px;
+    height: 80px;
+    margin: 10px;
+}
+#h2{
+    background: blue;
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+}
+/* اخفاء العناصر  */
+/* visibilite:hidden  اخفاء العنصر مع الحفاظ على مكانه */
+.first{
+    width: 400px;
+    height: 70px;
+    background: blue;
+    visibility: hidden;
+    font-size: 50px;
+}
+/* display none  حذف العنصر مع مكانه  */
+.seconde{
+    width: 400px;
+    height: 70px;
+    background: blue;
+    display: none;
+
+}
+/* opacity درجة الشفافية */
+.thre{
+    width: 400px;
+    height: 70px;
+    background: blue;
+   opacity: .5;
+   font-size: 50px;
+
+}

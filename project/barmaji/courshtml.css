@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    color: var(--lightcolor);
+    direction: rtl;
+}
+:root{
+    --primarycolor:#ff274b;
+    --secondarycolor:#f7bcf7;
+    --lightcolor:#ffffff;
+    --bgcolor-1:#171a1c;
+    --bgcolor-2:#22282a;
+    --padding: 8%;
+}
+body{
+    background-color: #ff274b;
+}
+.front_face{
+    width: 100%;
+    height: fit-content;
+   color: var(--lightcolor);
+  background-color: #171a1c;
+
+
+}
+
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding:4% ;
+
+}
+.nav div ul{
+    display: flex;
+    flex-direction: row-reverse;
+}
+@media (max-width:500px){
+    .nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav h2 {
+        margin-bottom: 10px;
+    }
+    .nav div ul{
+        margin-bottom: 10px;
+
+    }
+
+}
+.nav div ul li{
+    margin-left: 20px;
+    list-style-type: none;
+}
+.nav div ul li a{
+    text-decoration: none;
+    color: var(--primarycolor);
+}
+ .nav select{
+    background-color: var(--primarycolor);
+    color: var(--lightcolor);
+    border-radius: 12px;
+    border: none;
+    transition: 1s;
+    width: fit-content;
+    height: 30px;
+ }
+ .nav select:hover{
+    background-color: black;
+    border: 2px solid var(--primarycolor);
+ }
+
+
+.front_face h2{
+    
+    font-size: 1rem;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    white-space: 5px;
+  
+   
+    
+
+}
+span{
+    color: #ff274b;
+    font-size:1.3rem ;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    white-space: 5px;
+}
+.fiel{
+    margin-top: 50px;
+    
+    margin: var(--padding);
+}
+#fill{
+    margin-top: 20px;
+    width:100%;
+    text-align: left;
+    text-align: right;
+    font-size: 1.2rem;
+}
+#fill button{
+    background-color: #ff274b;
+    border: 2px solid transparent;
+    height: 30px;
+    width: 80px;
+    border-radius: 12px;
+    margin: 4%;
+    transition: 1s;
+   
+}
+#fill button:hover{
+    background-color: transparent;
+    border: 2px solid white;
+}
+#fill a{
+    text-decoration: none;
+    color: var(--lightcolor);
+}
+#fill img{
+    margin-right: 20px;
+}
+#fill p{
+    margin-right: 20px;
+}
+.First_Lesson{
+    background-color: var(--bgcolor-2);
+
+}
+.First_Lesson fieldset{
+    margin: var(--padding);
+}
+.First_Lesson fieldset div{
+    margin: 5%;
+}
+.First_Lesson fieldset div ol li{
+    margin-bottom: 10px;
+}
+.First_Lesson p{
+    margin-right:4% ;
+}
+.First_Lesson img{
+    margin-right:4% ;
+}
+.First_Lesson div ol li a{
+    color: var(--primarycolor);
+    text-decoration: none;
+    transition: 1s;
+    cursor: pointer;
+}
+.First_Lesson div ol li a:hover{
+    background-color:var(--primarycolor);
+    color: var(--lightcolor);
+}
+
+
+

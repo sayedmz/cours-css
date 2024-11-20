@@ -1,0 +1,137 @@
+/* transition لكل العناصر */
+.div1{
+    height: 30px;
+    width:50px;
+    background: red;
+    color: aqua;
+    transition: 3s;
+}
+.div1:hover{
+    width: 100%;
+    height: 100px;
+    background: yellow;
+}
+/* transition  محدد لعناصر  */
+.div2{
+    height: 30px;
+    width:50px;
+    background: red;
+    color: aqua;
+    transition: width 3s,height 1s;
+}
+.div2:hover{
+    width: 100%;
+    height: 100px;
+    background: yellow;
+}
+/* نوع الحركة  */
+.div3{
+    height: 30px;
+    width:50px;
+    background: red;
+    color: aqua;
+    transition: 4s ease ; /*تبدأ بطيى سريع بطيى*/
+}
+.div3:hover{
+    width: 100%;
+    height: 100px;
+    background: yellow;
+}
+.div4{
+    height: 30px;
+    width:50px;
+    background: red;
+    color: aqua;
+    transition: 4s ease-in ; /*تبدأ بطيى ثم سرعة عادية*/
+}
+.div4:hover{
+    width: 100%;
+    height: 100px;
+    background: yellow;
+}
+.div5{
+    height: 30px;
+    width:50px;
+    background: red;
+    color: aqua;
+    transition: 4s ease-out; /*تبدأ عادية ثم سرعة بطيى*/
+}
+.div5:hover{
+    width: 100%;
+    height: 100px;
+    background: yellow;
+}
+.div6{
+    height: 30px;
+    width:50px;
+    background: red;
+    color: aqua;
+    transition: 4s ease-in-out; /*تبدأ بطييى ثم سرعة عادية ثم بطيى*/
+}
+.div6:hover{
+    width: 100%;
+    height: 100px;
+    background: yellow;
+}
+.div7{
+    height: 30px;
+    width:50px;
+    background: red;
+    color: aqua;
+    transition: 4s ease-in-out; /*  سرعة عادية  */
+}
+.div7:hover{
+    width: 100%;
+    height: 100px;
+    background: yellow;
+}
+.div8{
+    height: 30px;
+    width:50px;
+    background: red;
+    color: aqua;
+    transition: 2s steps(4); /*  خطوات   */
+}
+.div8:hover{
+    width: 100%;
+    height: 100px;
+    background: yellow;
+}
+.div9{
+    height: 30px;
+    width:50px;
+    background: red;
+    color: aqua;
+    transition: 2s step-end; /*  البدء بعد نهاية 2 ثانية   */
+}
+.div9:hover{
+    width: 100%;
+    height: 100px;
+    background: yellow;
+}
+.div10{
+    height: 30px;
+    width:50px;
+    background: red;
+    color: aqua;
+    transition: 2s step-start; /*  البدء مباشرة    */
+}
+.div10:hover{
+    width: 100%;
+    height: 100px;
+    background: yellow;
+}
+.div11{
+    height: 30px;
+    width:50px;
+    background: red;
+    color: aqua;
+    transition: 2s ease 3s; /*  البدء بعد 3 ثوان     */
+}
+.div11:hover{
+    width: 100%;
+    height: 100px;
+    background: yellow;
+}
+/* tansition: transition-property transition-duration transition-timing-function transition-delay *//*delay التاخير*/
+

@@ -1,0 +1,112 @@
+.parent{
+    background: red;
+    padding: 10px;
+    width: 400px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* نستطيع استعمال القيم  px % auto مع بعض */
+    /* repeat(4,100px); */ 
+    /* minmax(100px,200px); اقل واكثر عرض ممكن حسب توفر المساحة*/
+    /*  repeat(auto-fil,minmax(100px,auto ou 1fr));  
+    تستعمل لجعل الشاشة ملائمة في كل الاحوال وتقسيم كافة المساحات*/
+    grid-template-rows: 1fr 1fr 1fr;
+    /*auto , minmax(100px,auto)
+      ستعمل اذا كان محتوى الوحدة كبيرة جدا وذلك من اجل احتوائه*/
+      row-gap: 10px; /*مساحات بين الوحدات بالعرض*/
+      column-gap: 10px;/*مساحات بين الوحدات بالطول*/
+      /* اختصار
+      gap:10px,15px; */
+     /* justify-content: ; /*او كان هناك مساحات autoلا تعمل  الا اذا استعملنا 
+      Xمحور ال */
+     /* align-content: ; /*محور Y
+      يجب توفر مساحات لتعمل هذة الخاصية*/
+}
+.parent div{
+    background: gold;
+}
+.parent .item1{
+    background: rgb(3, 187, 52);
+    grid-column: 1/3; /*يمكننا استعمال -1 لكافة المسافة*/
+
+}
+
+#parent1{
+    display: grid;
+    background: rgb(18, 17, 16);
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: 200px;
+    height: 300px;
+}
+#parent1 div{
+    background: red;
+}
+#header{ 
+    grid-column:1/4 ;
+}
+#nav{
+    grid-column: 1/2;
+    grid-row: 2/4 ;
+}
+#main{
+    grid-column: 2/3;
+    grid-row: 2/4 ;
+}
+#sidebar{
+    grid-column: 3/4;
+    grid-row: 2/4 ;
+}
+#footer{
+    grid-column: 1/4;
+    grid-row: 4/5 ;
+}
+
+#parent2{
+    display: grid;
+    background: rgb(18, 17, 16);
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: 200px;
+    height: 300px;
+    grid-template-areas: 
+    "head head head"
+    "nav main sidebar"
+    "nav main sidebar"
+    "foot foot foot";
+}
+#parent2 div{
+    background: red;}
+
+#header2{
+    grid-area: head;
+    text-align: center;
+   align-self: center;
+ 
+ 
+    
+}
+#nav2{
+    grid-area: nav;
+}
+#main2{
+    grid-area: main;
+}
+#sidebar2{
+    grid-area: sidebar;
+}
+#footer2{
+    grid-area: foot;
+}
+
+
+.parent3{
+    display: grid;
+    background: rgb(221, 216, 210);
+  grid-template-columns: minmax(300px,700px) repeat(2,100px); /* اول عامود من 200 الى 700 وباقي 100 */
+    gap: 10px;
+   /* grid-template-columns:repeat(auto-fil, minmax(200px, 1fr))  يملئ المساحة المتوفرة بالاعمدة المتساوية ابتداء من 200*/
+}
+
+
